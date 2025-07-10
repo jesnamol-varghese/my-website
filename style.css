@@ -51,3 +51,16 @@ footer {
   color: #999;
   font-size: 0.9rem;
 }
+.social-link img {
+  width: 28px;
+  height: auto;
+  margin-top: 10px;
+  opacity: 0.8;
+  transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+.social-link img:hover {
+  transform: scale(1.1);
+  opacity: 1;
+}
+
