@@ -51,5 +51,18 @@ footer {
   color: #999;
   font-size: 0.9rem;
 }
+.social-link i {
+  font-size: 28px;
+  color: #007acc;
+  transition: transform 0.2s ease, opacity 0.2s ease;
+  opacity: 0.8;
+  margin-top: 10px;
+}
+
+.social-link:hover i {
+  transform: scale(1.1);
+  opacity: 1;
+}
+
 
 
