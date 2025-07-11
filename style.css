@@ -90,6 +90,13 @@ footer {
   color: #333;
   opacity: 0.8;
 }
+.intro .arrow {
+  display: block;
+  font-size: 2rem;
+  color: #007acc;
+  margin-bottom: 10px;
+}
+
 
 
 
