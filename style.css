@@ -1,3 +1,4 @@
+/* Base Layout */
 body {
   font-family: Arial, sans-serif;
   max-width: 800px;
@@ -7,14 +8,29 @@ body {
   color: #333;
 }
 
-header, section, footer {
-  margin-bottom: 40px;
+/* Navbar */
+.navbar {
+  position: sticky;
+  top: 0;
+  background-color: white;
+  padding: 10px 0;
+  text-align: center;
+  border-bottom: 1px solid #eee;
+  z-index: 10;
+}
+.navbar a {
+  margin: 0 15px;
+  font-weight: bold;
+  color: #007acc;
+  text-decoration: none;
+}
+.navbar a:hover {
+  text-decoration: underline;
 }
 
-header h1 {
-  color: #007acc;
-  font-size: 2.5rem;
-  margin-bottom: 10px;
+/* Sections */
+header, section, footer {
+  margin-bottom: 40px;
 }
 
 h2 {
@@ -23,11 +39,41 @@ h2 {
   color: #007acc;
 }
 
+/* Hero Section */
+.hero {
+  background: linear-gradient(to right, #e0f7ff, #f7f9fc);
+  padding: 60px 20px;
+  text-align: center;
+  border-radius: 8px;
+}
+.hero-content h1 {
+  font-size: 2.8rem;
+  color: #007acc;
+  margin-bottom: 10px;
+}
+.hero-content p {
+  font-size: 1.2rem;
+  color: #444;
+  opacity: 0.9;
+}
+
+/* Profile Picture */
+.profile-pic {
+  width: 160px;
+  height: 160px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 4px solid #007acc;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  margin: 0 auto 15px;
+  display: block;
+}
+
+/* Skills */
 ul {
   list-style: none;
   padding-left: 0;
 }
-
 ul li {
   background-color: white;
   padding: 10px 15px;
@@ -37,20 +83,16 @@ ul li {
   box-shadow: 0 2px 4px rgba(0,0,0,0.05);
 }
 
+/* Links */
 a {
   color: #007acc;
   text-decoration: none;
 }
-
 a:hover {
   text-decoration: underline;
 }
 
-footer {
-  text-align: center;
-  color: #999;
-  font-size: 0.9rem;
-}
+/* Social Link Icons */
 .social-link i {
   font-size: 28px;
   color: #007acc;
@@ -58,46 +100,36 @@ footer {
   opacity: 0.8;
   margin-top: 10px;
 }
-
 .social-link:hover i {
   transform: scale(1.1);
   opacity: 1;
 }
-.site-header {
+
+/* Footer */
+footer {
   text-align: center;
-  margin-top: 40px;
-  margin-bottom: 40px;
+  color: #999;
+  font-size: 0.9rem;
 }
 
-.profile-pic {
-  width: 160px;
-  height: 160px;
-  object-fit: cover;
-  border-radius: 50%;
-  border: 4px solid #007acc;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-  margin: 0 auto;
-}
+/* Responsive Design */
+@media (max-width: 600px) {
+  body {
+    padding: 20px 10px;
+  }
 
-.site-header h1 {
-  font-size: 2.5rem;
-  color: #007acc;
-  margin: 15px 0 5px;
-}
+  .hero-content h1 {
+    font-size: 2rem;
+  }
 
-.site-header .tagline {
-  font-size: 1.1rem;
-  color: #333;
-  opacity: 0.8;
-}
-.intro .arrow {
-  display: block;
-  font-size: 2rem;
-  color: #007acc;
-  margin-bottom: 10px;
-}
+  .hero-content p {
+    font-size: 1rem;
+  }
 
-
+  ul li {
+    font-size: 0.95rem;
+  }
+}
 
 
 
